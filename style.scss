@@ -1,0 +1,62 @@
+$colorPrimary1: hsl(193, 38%, 86%);
+$colorPrimary2: hsl(150, 100%, 66%);
+$colorNeutral1: hsl(217, 19%, 38%);
+$colorNeutral2: hsl(217, 19%, 24%);
+$colorNeutral3: hsl(218, 23%, 16%);
+
+$fontSize: 28px;
+$fontMain: "Manrope", sans-serif;
+$fontWeight: 800;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorNeutral3;
+
+    main {
+        position: relative;
+        max-width: 550px !important;
+        text-align: center;
+        background-color: $colorNeutral2;
+        border-radius: 1rem;
+        h1 {
+            font-size: 0.8rem;
+            letter-spacing: 0.3rem;
+            color: $colorPrimary2;
+        }
+
+        #adviceText {
+            font-size: $fontSize;
+            color: $colorPrimary1;
+        }
+
+        .hrContainer {
+            display: flex;
+            color: $colorPrimary1;
+        }
+
+        #btnDice {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            background-color: $colorPrimary2;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
