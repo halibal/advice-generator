@@ -21,6 +21,7 @@ body main {
   text-align: center;
   background-color: hsl(217deg, 19%, 24%);
   border-radius: 1rem;
+  padding: 3rem;
 }
 body main h1 {
   font-size: 0.8rem;
@@ -29,20 +30,39 @@ body main h1 {
 }
 body main #adviceText {
   font-size: 28px;
+  font-weight: 500;
   color: hsl(193deg, 38%, 86%);
 }
 body main .hrContainer {
   display: flex;
+  align-items: center;
+  justify-content: center;
   color: hsl(193deg, 38%, 86%);
 }
+body main .hrContainer hr {
+  width: 40%;
+}
+body main .hrContainer i {
+  font-size: 2rem;
+  width: 10%;
+}
 body main #btnDice {
+  cursor: pointer;
   position: absolute;
+  top: 100%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  transition: 0.5s;
   background-color: hsl(150deg, 100%, 66%);
   padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 50px;
+  height: 65px;
+  width: 65px;
+  font-size: 1.5rem;
+  border: none;
+}
+body main #btnDice:hover {
+  box-shadow: 0 0 20px 15px rgba(82, 255, 168, 0.5);
 }/*# sourceMappingURL=style.css.map */
